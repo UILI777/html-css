@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Qwitcher+Grypen&family=Tilt+Prism&display=swap');
+body{
+    background-color: cadetblue;
+    font-family: Dancing script;
+    font: normal 16px;
+}
+h1{
+    color: orangered;
+}
+h1#main{
+    text-align: center;
+    color: brown;
+}
+h2{
+    color: orange;
+}
+.basico{
+    color: red;
+}
+.intermediario{
+    color: yellow;    
+}
+.avancado{
+    color: green;
+}
