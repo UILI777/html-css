@@ -4,5 +4,3 @@
 alo 
 oiii
 oie
-
-vnWBNVOWbvw
