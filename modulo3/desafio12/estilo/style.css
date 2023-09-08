@@ -63,12 +63,34 @@ section.normal{
 section.imagem{
     background-color: darkgrey;
     color: white;
+    box-shadow: inset 5px 5px 11px  rgba(0, 0, 0, 0.616);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem p{
     display: inline-block;
     padding: 10px;
-    background-color: gainsboro;
+    background-color: rgba(255, 255, 0, 0.267);
+    text-shadow: 0px 0px 1px black;
+    border-radius: 10px;
+}
+
+section#img02 p{
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+section p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer{
