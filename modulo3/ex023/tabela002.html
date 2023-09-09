@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500;700&family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Passion One';
         }
 
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,37 +23,258 @@
             padding: 10px;
         }
 
-        thead{
-            background-color: gray;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead, tfoot{
+            background-color: grey;
             color: white;
         }
+
+        thead tr th{
+            position:sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody{
+            color: white;
+            text-shadow: 0px 0px 2px black;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: cadetblue;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
-    <h1>anatomia para tabelas grandes</h1>
+    <h1>Anatomia para tabelas grandes</h1>
     <table>
+        <caption>Populacao das unidades federativas.</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>populacao</th>
+                <th  scope="col">estado</th>
+                <th scope="col">populacao</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>sao paulo</td>
-                <td>52656346</td>
+                <td class="num">52656346</td>
             </tr>
             <tr>
                 <td>minas gerais</td>
-                <td>5366536</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">52656346</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">52656346</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">52656346</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">52656346</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="num">52656346</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">664536</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">363563</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">451367</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="num">7534113</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
-                <td>'varios'</td>
+                <th scope="row">total de habitantes</th>
+                <td class="num">7312764041</td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
+    <p>
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+        Velit veritatis quae quasi atque illo neque, omnis quaerat repellendus dolore magni assumenda sed, optio dolores amet commodi odit nam mollitia.
+    </p>
 </body>
 </html>
