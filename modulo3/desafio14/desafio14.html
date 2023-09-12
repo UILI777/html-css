@@ -11,7 +11,7 @@
 
         table{
             border-collapse: collapse;
-            text-align: center;
+            width: 250px;
         }
 
         td, th{
@@ -19,6 +19,15 @@
             padding: 10px;
         }
         
+        .media{
+            text-align: left;
+            background-color: grey;
+        }
+
+        thead{
+            background-color: grey;
+        }
+
     </style>
 </head>
 <body>
@@ -26,15 +35,14 @@
     <table>
         <thead>
             <tr>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Disciplina</th>
                 <th colspan="2">Notas</th>
-                <th colspan="2">Notas</th>
+                <th rowspan="2">Media</th>
             </tr>
             <tr>
-                <th>Area</th>
-                <th>Disciplina</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Media</th>
+                <th rowspan="2">Nota 1</th>
+                <th rowspan="2">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -58,8 +66,8 @@
                 <td>/</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Medias exatas</th>
-                <td>/</td>
+                <th colspan="4" scope="row" class="media">Medias exatas</th>
+                <td class="media">/</td>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -74,8 +82,8 @@
                 <td>/</td>
                 <td>/</td>
             </tr>
-            <th colspan="4" scope="row">Media de exatas</th>
-            <td>/</td>
+            <th colspan="4" scope="row" class="media">Media de exatas</th>
+            <td class="media">/</td>
         </tbody>
     </table>
 </body>
